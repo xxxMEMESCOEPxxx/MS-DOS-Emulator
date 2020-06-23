@@ -1,0 +1,42 @@
+__________________________________________________________
+|		       MS-DOS EMULATOR			  |
+|			Help Document			  |
+|		    (C) Andrew Maney 2020		  |
+|							  |		
+|							  |
+|_________________________________________________________|
+
+---COMMANDS-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+dir - shows directories on the selected drive
+cls - clears the screen
+shutdown - Shuts down the Emulator
+cd %DIRNAME% - switches directory to the %DIRNAME% (Currently unavaliable)
+A: - Switches to the A: Drive (Currently unavaliable)
+help - displays useful information
+say - prints User-Input text onto the screen
+ver - Displays the current shell version
+time - displays the current time
+cmd - starts a cmd window
+restart - restarts the Emulator
+restartdb - restarts the Emulator in DEBUG mode (Currently not working)
+createFile - creates a file based on the user input. These files can be found in the folder named "Created Files".
+viewFile - opens a file based on the user's input
+moveFile - moves a file to a user specified directory.
+delFile - deletes a user specified file (Currently unavailiable as of version 1.0)
+
+
+
+
+---DEBUG TERMINAL-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This terminal is to be used for debugging. This terminal may be outdated compared to the normal terminal!
+This is to keep it basic and not as resource intensive. Boot times will be slower however, as the Emulator is writing to the Console. It is also
+loading DEBUG files.
+
+
+---KNOWN ISSUES-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+During the "moveFile" operation, if the user specifies a file that does not exist, the Emulator will crash. 
+During the "moveFile" operation, if the user specifies a path that does not exist, the Emulator will rename the existing already specified text file that is to be moved.
+During the first boot-up, "DEBUG MODE" will cause the Emulator to crash. Restarting the shell using "restartdb" will work.
